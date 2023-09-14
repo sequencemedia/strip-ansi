@@ -1,0 +1,31 @@
+{
+  "name": "@sequencemedia/strip-ansi",
+  "version": "0.0.0",
+  "main": "./strip-ansi.mjs",
+  "type": "module",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "sequencemedia@sequencemedia.net",
+    "url": "https://sequencemedia.net"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .mjs,.cjs",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "bin": {
+    "strip-ansi": "strip-ansi.mjs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "strip-ansi": "^7.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@sequencemedia/hooks": "^1.0.451",
+    "core-js": "^3.32.2",
+    "eslint": "^8.49.0",
+    "eslint-config-standard": "^17.1.0"
+  }
+}
