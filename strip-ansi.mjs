@@ -3,11 +3,16 @@
 import stripAnsi from 'strip-ansi'
 
 const {
-  stdin,
+  openStdin,
   stdout
 } = process
 
-stdin
-  .on('data', (data) => {
-    stdout.write(stripAnsi(data.toString('utf8')))
+let collector = Buffer.from('')
+
+openStdin()
+  .on('data', (buffer) => {
+    collector = Buffer.concat([collector, buffer])
+  })
+  .on('end', () => {
+    stdout.write(stripAnsi(collector.toString('utf8')))
   })
