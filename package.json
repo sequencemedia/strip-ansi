@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/strip-ansi",
-  "version": "0.0.181",
+  "version": "0.0.182",
   "main": "./strip-ansi.mjs",
   "type": "module",
   "author": {
