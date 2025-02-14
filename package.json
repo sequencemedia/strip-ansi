@@ -28,7 +28,7 @@
     "@babel/core": "^7.26.8",
     "@babel/preset-env": "^7.26.8",
     "@sequencemedia/eslint-config-standard": "^0.2.22",
-    "@types/node": "^22.13.1",
+    "@types/node": "^22.13.4",
     "core-js": "^3.40.0",
     "eslint": "^9.20.1",
     "globals": "^15.15.0",
