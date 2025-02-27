@@ -3,13 +3,13 @@
 import stripAnsi from 'strip-ansi'
 
 const {
-  openStdin,
+  stdin,
   stdout
 } = process
 
 let collector = Buffer.from('')
 
-openStdin()
+stdin
   .on('data', (buffer) => {
     collector = Buffer.concat([collector, buffer])
   })
