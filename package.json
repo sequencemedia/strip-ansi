@@ -11,7 +11,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sequencemedia/strip-ansi.git"
+    "url": "git+https://github.com/sequencemedia/strip-ansi.git"
   },
   "scripts": {
     "lint": "eslint .",
