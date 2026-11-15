@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import stripAnsi from 'strip-ansi'
+import {
+  stripVTControlCharacters as stripAnsi
+} from 'node:util'
 
 const {
   stdin,
